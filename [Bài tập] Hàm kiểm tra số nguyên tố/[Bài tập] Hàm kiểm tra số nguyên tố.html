@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Hàm kiểm tra số nguyên tố</title>
+</head>
+<body>
+<input id="inputnumber" oninput="isPrime(this.value)">
+<p><span id="output"></span></p>
+<script>
+    function isPrime(number) {
+        number = parseInt(number);
+        let max = false
+        if (number < 2) {
+            max = true;
+        } else if (number === 2) {
+            max = false
+        } else {
+            for (let i = 2; i <= Math.sqrt(number); i++) {
+                if (number%i===0){
+                    max = true;
+                    break;
+                } else {
+                    max = false
+                }
+            }
+        }
+        if (max) {
+            document.getElementById("output").innerHTML = "kp số ngtố"
+        } else {
+            document.getElementById("output").innerHTML = "là số ngtố"
+        }
+    }
+</script>
+</body>
+</html>

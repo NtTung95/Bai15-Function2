@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 5</title>
+</head>
+<body>
+<p id="display"></p>
+<script>
+    let input = prompt("Nhập tên")
+    let star = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let starName = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+
+    function displayStarName(name) {
+        for (let i = 0; i < star.length; i++) {
+            if (star[i] === name) {
+                document.getElementById("display").innerHTML = starName[i];
+                break;
+            } else {
+                document.getElementById("display").innerHTML = "k xác định";
+            }
+        }
+    }
+    displayStarName(input);
+</script>
+</body>
+</html>

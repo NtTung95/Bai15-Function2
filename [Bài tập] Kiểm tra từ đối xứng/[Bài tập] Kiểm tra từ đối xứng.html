@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Kiểm tra từ đối xứng</title>
+</head>
+<body>
+<script>
+    function isPalindrome(s) {
+        let a = s.split("").reverse().join("");
+        console.log(a)
+        if (a === s) {
+            return true
+        } else {
+            return false
+        }
+    }
+
+    let b = prompt("Nhap vao 1 tu")
+    console.log(isPalindrome(b))
+</script>
+</body>
+</html>

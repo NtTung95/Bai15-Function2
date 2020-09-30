@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 9</title>
+</head>
+<body>
+<script>
+    let arr = ["mot","hai","ba","bon","hai","ba"];
+    function checkInArray(x) {
+        let count = 0
+            if (arr.indexOf(x) === -1) {
+                alert("k có ")
+            } else if (arr.indexOf(x) !== -1) {
+                for(let i=0; i < arr.length; i++) {
+                    if (arr[i] === x) {
+                        count += 1;
+                    }
+                }
+                console.log(count)
+            }
+    }
+    let input = prompt()
+    checkInArray(input)
+</script>
+</body>
+</html>

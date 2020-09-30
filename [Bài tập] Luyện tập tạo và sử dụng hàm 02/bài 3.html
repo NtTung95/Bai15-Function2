@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 3</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("nhập 1 số"))
+
+    function giaithua(x) {
+        if (x === 1){
+            return 1
+        }
+        return x*giaithua(x-1);
+    }
+
+    document.write(giaithua(a))
+</script>
+</body>
+</html>
